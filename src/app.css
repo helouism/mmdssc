@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+#app {
+  min-height: 100svh;
+}
+
+/* Numeric inputs keep a consistent width inside the matrix grid. */
+.matrix-input {
+  width: 100%;
+  min-width: 4.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.375rem;
+  font-size: 0.8125rem;
+  text-align: right;
+  background: #fff;
+}
+
+.matrix-input:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 1px;
+}
+
+.matrix-input:invalid {
+  border-color: #f87171;
+}
